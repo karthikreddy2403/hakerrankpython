@@ -1,0 +1,31 @@
++    #without using string function write code for input=3 output =123 
++
++    n=int(input())
++    i=1
++    while i<=n:
++       print(i,end="")
++       i=i+1
++
++    #Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with  places after the decimal.
++
++      n=int(input())
++      arr=list(map(int,input().split()))
++      total=len(arr)
++      positive=0
++      negitive=0
++      zero=0
++      for i in range (0,n):
++          if arr[i]>0:
++              positive+=1
++          elif arr[i]==0:
++              zero+=1
++          else:
++              negitive+=1
++      print(round(positive/total,6))
++      print(round(negitive/total,6))
++      print(round(zero/total,6))
+
++
++
++
++
